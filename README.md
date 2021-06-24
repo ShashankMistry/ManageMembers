@@ -19,8 +19,10 @@ for implementing qr code I used custom library.
 ```
 implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
 ```
+
+### Auto Backup
 if you build this app on traget device 30 it will not create backup due to new privacy changes by google.
-so build in on target device as 10.
+so build in on target device 29 or below.
 
 ### Example 
 https://www.youtube.com/watch?v=xZDd3jY2Eh4
