@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="10dp"
+    tools:context=".Activities.UserSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:fontFamily="@font/alegreya"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:fontFamily="@font/alegreya"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/alegreya"
+            android:hint="Mobile"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/dobEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:fontFamily="@font/alegreya"
+            android:hint="DOB"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/soda"
+            style="@android:style/Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:fontFamily="@font/alegreya"
+            android:text="Coffee"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/sodaLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:divider="@null"
+            android:nestedScrollingEnabled="true" />
+
+        <TextView
+            android:id="@+id/milk"
+            style="@android:style/Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:fontFamily="@font/alegreya"
+            android:text="Milk Shakes"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/milkLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:divider="@null"
+            android:nestedScrollingEnabled="true" />
+
+        <TextView
+            android:id="@+id/Mojito"
+            style="@android:style/Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:fontFamily="@font/alegreya"
+            android:text="Mojito"
+            android:textSize="18sp" />
+
+
+        <ListView
+            android:id="@+id/mojitoLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:divider="@null"
+            android:nestedScrollingEnabled="true" />
+
+        <TextView
+            android:id="@+id/iceTea"
+            style="@android:style/Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:fontFamily="@font/alegreya"
+            android:text="Ice Tea"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/iceTeaLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:divider="@null"
+            android:nestedScrollingEnabled="true" />
+
+        <Button
+            android:id="@+id/SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/alegreya"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

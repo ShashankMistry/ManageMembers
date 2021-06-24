@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shashank.managemembers">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.ManageMembers">
+        <activity android:name=".Activities.HistoryActivity"
+            android:parentActivityName=".Activities.ListMembersActivity"
+            android:label="History"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".Activities.AddMenuItem" />
+        <activity
+            android:name=".Activities.AddMenuItem"
+            android:hardwareAccelerated="true"
+            android:label="MENU"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.editMember"
+            android:label="Edit Data"
+            android:parentActivityName=".Activities.ListMembersActivity" />
+        <activity
+            android:name=".Activities.BuyActivity"
+            android:label="Welcome Back"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.ListMembersActivity"
+            android:hardwareAccelerated="true"
+            android:label="MEMBERS"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.UserSelectionActivity"
+            android:label="Welcome"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
