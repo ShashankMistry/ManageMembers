@@ -2,16 +2,18 @@
 Android application for managing membership of Cafe.
 
 ### Basic features
-* cafe owner can manage all customers who has taken membership.
-* it asks customer to select 10 drinks for membership and if customer chooses premium drink total selection number is decreases to 8.
-* auto backup when any changes happen it will create backup of it.
+* Cafe owner can manage all customers who has taken membership.
+* It asks customer to select 10 drinks for membership and if customer chooses premium drink total selection number is decreases to 8.
+* Auto backup when any changes happen it will create backup of it.
 * Next time when user user his membership QR Code, app will open buyActivity where user can select drinks.
-* it will send sms to user on every use of ones membership.
+* It will send sms to user on every use of ones membership QR code.
+* User can search member by name or mobile number.
+* One can add or remove items from menu.
 
 ### Highlights
 * QR Scanner implementation.
 * All data is stored using SQlite databse.
-* Owner can send special message to all the members.
+* Owner can send special SMS to all the members.
 
 ### QR Scanner
 for implementing qr code I used custom library.
